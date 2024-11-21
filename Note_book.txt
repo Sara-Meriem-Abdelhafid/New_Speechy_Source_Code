@@ -1,0 +1,19 @@
+arecord -l
+
+nano ~/.asoundrc
+
+pcm.capture {
+    type plug
+    slave {
+        pcm "hw:3,0"
+        rate 16000
+        format S16_LE
+        channels 1
+    }
+}
+
+sudo nano /etc/asound.conf
+pcm.!default {
+    type plug
+    slave.pcm "plughw:3,0"
+}
