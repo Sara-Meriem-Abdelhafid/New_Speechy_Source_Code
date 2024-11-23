@@ -119,7 +119,7 @@ def output_text_to_file(text, c, save_dir="text_in_out/outputs_text"):
 def record_speech_to_text(chosen_microphone,c,language):
     recognizer = sr.Recognizer()
     #get audio and save it
-    with sr.Microphone() as source: #device_index=chosen_microphone
+    with sr.Microphone() as source:    #device_index=chosen_microphone
         recognizer.adjust_for_ambient_noise(source)  # Adjust for noise
         translation=translit_message("Hello I'm listening, how can I help you?",language)
         text_to_speech(translation, language) 
