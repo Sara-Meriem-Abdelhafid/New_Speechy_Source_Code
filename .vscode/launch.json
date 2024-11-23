@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/saraabdelhafid/Desktop/Speechy_Source_Code/Source Code/Speechy_Robot_mac/Software/IA",
+      "program": "/Users/saraabdelhafid/Desktop/Speechy_Source_Code/Source Code/Speechy_Robot_mac/Software/IA/build/Debug/outDebug"
+    }
+  ]
+}
